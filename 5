@@ -1,0 +1,18 @@
+public class DivisorDigits{
+	public int howMany(int number){
+		int count=0;int digit=number%10;int t=number;
+		
+		while(t!=0){
+			
+			if(digit==0)break;
+					
+			if(number%digit==0){
+			count++;}
+		
+		t=t/10;
+		digit=t%10;
+		}
+
+	return count;
+	}
+}
