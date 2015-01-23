@@ -1,0 +1,14 @@
+FInd one string is prefix of another string in a string array
+
+public class PrefixCode{
+	public String isOne(String[] words){
+
+	if(words.length==1)return "Yes";
+	for(int i=0;i<words.length;i++){
+		for(int j=0;j<words.length;j++){
+			if(!words[i].equals(words[j])&&words[i].startsWith(words[j]))return "No, "+j;
+		}		
+	}
+	return "Yes";
+	}
+}
