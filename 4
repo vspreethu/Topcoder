@@ -1,0 +1,16 @@
+
+Add shift to the letters and convert it to string
+
+public class CCipher{
+public String decode(String cipherText, int shift){
+StringBuffer s = new StringBuffer("");
+int value;
+for(int i=0;i<cipherText.length();i++){
+value = (int)(cipherText.charAt(i));
+if(value-shift<65)value=value+26-shift;
+else value=value-shift;
+s.append((char)value);
+}
+return s.toString();
+}
+
