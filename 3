@@ -1,0 +1,25 @@
+
+Find the max face value among the toss
+
+public class YahtzeeScore{
+public int maxPoints(int[] toss){
+int res[]= new int[7];
+int max=-99;
+
+for(int i=0;i<toss.length;i++){
+	res[toss[i]]=res[toss[i]]+1;
+}
+
+for(int i=1;i<res.length;i++){
+	
+	max=Math.max(max,res[i]*i);
+}
+return max;
+}
+
+
+}
+
+//best solution 
+
+using one for loop and add max statement in the first first loop

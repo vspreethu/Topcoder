@@ -1,0 +1,16 @@
+Problem Statement
+    
+Convert seconds into String H:M:S
+
+public class Time{
+public String whatTime(int seconds){
+int hours=seconds/3600;
+int min=(seconds-hours*3600)/60;
+int sec=seconds-(min*60)-(hours*3600);
+String res = hours+":"+min+":"+sec;
+return res;
+
+}
+
+
+}
